@@ -1,0 +1,14 @@
+{
+	"name": "combeau",
+	"version": "0.0.1",
+	"main": "index.js",
+	"files": [
+		"index.js"
+	],
+	"engines": {
+		"node": ">=6"
+	},
+	"dependencies": {
+		"csv-stringify": "^5.3.3"
+	}
+}
