@@ -26,14 +26,15 @@ const parameters = [
 	}
 ];
 
-
+let columns = parameters.map(parameter => parameter.name);
+columns.splice(0, 0, 'id');
 
 const writeStream = fs.createWriteStream("output.csv");
 
 const stringifier = stringify({
 	delimiter: ',',
 	header: true,
-	columns:['id', 'size','country','dax']
+	columns: columns
 });
 stringifier.pipe(writeStream);
 
